@@ -1,0 +1,85 @@
+!!! 5
+html.no-js
+//
+    <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title=title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/css/main.css')
+    script(src='/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')
+  body
+    //if lt IE 7
+      p.chromeframe
+        | You are using an
+        strong outdated
+        | browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        | or
+        a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
+        | to improve your experience.
+    //
+       This code is taken from http://twitter.github.com/bootstrap/examples/hero.html 
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='#') #{title}
+          - if (user && user.isLoggedIn)
+               ul.nav.pull-right
+                    li.dropdown
+                        a.dropdown-toggle(href='#', data-toggle='dropdown')
+                            | #{user.nickname}
+                            b.caret
+                          ul.dropdown-menu
+                            li
+                              a(href='/settings') Settings
+                            li
+                              a(href='/preferences') Preferences
+                            li
+                              a(href='/logout') Logout
+          - else
+                .nav-collapse.collapse
+                        ul.nav
+                          li.active
+                            a(href='#') Home
+                          li
+                            a(href='#about') About
+                          li
+                            a(href='#contact') Contact
+                form(class='navbar-form pull-right', action='/login', method='post')
+                  input.span2(type='text', placeholder='Username', name='username')
+                  input.span2(type='password', placeholder='Password', name='password')
+                  button.btn(type='submit') Sign in
+          //
+            /.nav-collapse
+    .container 
+        block container
+        hr
+        footer
+          p © CataCS 2013
+     //
+        /container 
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/connection.js")
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\\/script>')
+    script(src='/js/vendor/bootstrap.min.js')
+    script(src='/js/main.js')
+    script.
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+     
+    
+    
+

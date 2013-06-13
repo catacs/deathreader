@@ -1,0 +1,25 @@
+{
+  "name": "reader",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.4",
+    "socket.io":">=0.9.16",
+    "soket.io-client": ">=0.9.16",
+    "connect-flash": ">=0.1.1",
+    "jade": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "log4js": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "passport-google": ">=0.3.0",
+    "passport-facebook": ">=0.1.5", 
+    "passport-twitter": ">=0.1.4",  
+    "bcrypt": "*",
+    "rssparser": "*"
+   }
+}
