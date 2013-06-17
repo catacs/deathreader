@@ -44,11 +44,11 @@ html.no-js
                 label Password
                 input(type='password', name='password')
                 - if (message != "")
-                    div#login-error 
+                    div#login-error.text-error 
                         p #{message}
                 
                 p
-                input(type='submit', class='btn', value='Login')
+                input(type='submit', class='btn btn-primary', value='Login')
         hr
         footer
           p © CataCS 2013

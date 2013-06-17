@@ -263,3 +263,71 @@ MongoError: E11000 duplicate key error index: Reader.users.$username_1  dup key:
 [2013-06-13 23:33:09.753] [INFO] reader - We have connected to mongodb
 [2013-06-14 00:16:20.073] [INFO] reader - Express server listening on port 3000
 [2013-06-14 00:16:20.084] [INFO] reader - We have connected to mongodb
+[2013-06-14 01:19:59.119] [INFO] reader - Express server listening on port 3000
+[2013-06-14 01:19:59.127] [INFO] reader - We have connected to mongodb
+[2013-06-14 01:20:08.959] [INFO] reader - User: admin signed in
+[2013-06-14 01:56:08.139] [WARN] reader - User: admin Password incorrect
+[2013-06-14 01:56:13.004] [INFO] reader - User: admin signed in
+[2013-06-14 01:56:19.462] [INFO] reader - User as not found
+[2013-06-14 01:56:23.041] [INFO] reader - User as not found
+[2013-06-14 01:57:57.994] [INFO] reader - User af not found
+[2013-06-14 02:02:41.378] [INFO] reader - User: admin signed in
+[2013-06-14 22:10:52.218] [INFO] reader - Express server listening on port 3000
+[2013-06-14 22:10:52.225] [INFO] reader - We have connected to mongodb
+[2013-06-14 22:11:37.565] [INFO] reader - User: admin signed in
+[2013-06-15 15:54:45.547] [INFO] reader - Express server listening on port 3000
+[2013-06-15 15:54:45.666] [INFO] reader - We have connected to mongodb
+[2013-06-15 15:54:53.211] [INFO] reader - User: admin signed in
+[2013-06-15 15:57:26.656] [INFO] reader - Express server listening on port 3000
+[2013-06-15 15:57:26.664] [INFO] reader - We have connected to mongodb
+[2013-06-15 15:57:35.222] [INFO] reader - Express server listening on port 3000
+[2013-06-15 15:57:35.229] [INFO] reader - We have connected to mongodb
+[2013-06-15 15:57:43.601] [INFO] reader - User: admin signed in
+[2013-06-15 16:09:29.556] [INFO] reader - User: admin signed in
+[2013-06-15 16:10:05.987] [INFO] reader - Express server listening on port 3000
+[2013-06-15 16:10:05.994] [INFO] reader - We have connected to mongodb
+[2013-06-15 16:10:13.995] [INFO] reader - User: admin signed in
+[2013-06-15 16:10:50.754] [INFO] reader - Express server listening on port 3000
+[2013-06-15 16:10:50.763] [INFO] reader - We have connected to mongodb
+[2013-06-15 16:11:01.090] [INFO] reader - User: admin signed in
+[2013-06-15 16:26:26.851] [INFO] reader - User: added cata@mail.com
+[2013-06-15 16:26:35.526] [INFO] reader - User: cata signed in
+[2013-06-17 23:01:36.901] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:01:37.000] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:33:32.171] [WARN] reader - User: admin Password incorrect
+[2013-06-17 23:37:35.103] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:37:35.109] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:37:43.578] [WARN] reader - User: admin Password incorrect
+[2013-06-17 23:39:14.099] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:39:14.105] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:39:22.465] [INFO] reader - User: admin signed in
+[2013-06-17 23:39:42.903] [WARN] reader - User: admin Password incorrect
+[2013-06-17 23:39:47.463] [INFO] reader - User sdf not found
+[2013-06-17 23:42:44.298] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:42:44.305] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:42:50.719] [INFO] reader - User admina not found
+[2013-06-17 23:45:09.642] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:45:09.652] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:45:38.824] [WARN] reader - User: admin Password incorrect
+[2013-06-17 23:49:25.119] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:49:25.128] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:50:17.896] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:50:17.902] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:52:11.499] [INFO] reader - User fb not found
+[2013-06-17 23:52:15.084] [INFO] reader - User dfg not found
+[2013-06-17 23:54:05.434] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:54:05.444] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:54:53.245] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:54:53.252] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:55:17.536] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:55:17.544] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:56:24.299] [INFO] reader - Express server listening on port 3000
+[2013-06-17 23:56:24.306] [INFO] reader - We have connected to mongodb
+[2013-06-17 23:56:33.607] [INFO] reader - User er not found
+[2013-06-17 23:56:41.175] [INFO] reader - User dfg not found
+[2013-06-18 00:00:21.105] [INFO] reader - Express server listening on port 3000
+[2013-06-18 00:00:21.113] [INFO] reader - We have connected to mongodb
+[2013-06-18 00:00:59.484] [INFO] reader - User er not found
+[2013-06-18 00:22:47.188] [INFO] reader - User rth not found
+[2013-06-18 00:23:49.653] [INFO] reader - User ds not found
+[2013-06-18 00:25:25.280] [INFO] reader - User: admin signed in

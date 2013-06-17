@@ -8,28 +8,25 @@ exports.index = function(req, res){
   if(authenticated) 
     res.redirect('/reader');
   else
-    res.render('index', { title: appName});
+    res.render('index', { title: appName, message: req.flash('error') });
 };
 
 exports.reader = function(req, res){
   authenticated = req.isAuthenticated();
-  // console.log(req);
   res.render('reader', { title: appName, user: {
                                               isLoggedIn: authenticated ,
-                                              nickname: req.user.username
+                                              nickname: req.user.username,
+                                              completename: req.user.name.first+" "+req.user.name.last
                                          } });
 };
 
-exports.login = function(req, res){
-  res.render('login', { title: appName, message: req.flash('error') });
-};
+
 exports.logout = function(req, res){
     req.logout();
     res.redirect('/');
 };
 
 exports.postlogin = function(req, res){
-   authenticated = req.isAuthenticated();
    res.redirect('/reader');
 };
 exports.signup = function(req, res){

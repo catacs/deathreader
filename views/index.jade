@@ -1,14 +1,31 @@
 extends layout
 
 block container
-      //
-         Main hero unit for a primary marketing message or call to action 
-      .hero-unit
-        h1 Welcome to #{title} !
-        p
-          | This is an application to read rss feed.
-        p
-          a.btn.btn-primary.btn-large Learn more »
-      //
-  
+    .container-fluid
+        .row-fluid
+          //
+             Main hero unit for a primary marketing message or call to action 
+          .span8
+            .hero-unit
+                h1 Welcome to #{title} !
+                p
+                  | This is an application to read rss feed.
+                p
+                  a.btn.btn-primary.btn-large Learn more »
+          .span4
+            .hero-unit   
+                form(id='login-form', action='/', method='post')
+                    p Sign in:
+                    p
+                    label Username
+                    input(type='text', name='username')
+                    p
+                    label Password
+                    input(type='password', name='password')
+                    - if (message != "")
+                        div#login-error
+                            p.text-error #{message}
+                    
+                    p
+                    input.btn.btn-primary(type='submit', value='Login')
   

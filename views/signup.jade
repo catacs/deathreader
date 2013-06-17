@@ -35,27 +35,28 @@ html.no-js
                             a(href='/contact') Contact
     .container 
           h1= title
-          form(id='signup-form', action='/signup', method='post')
-                    p
-                    label Name
-                    input(type='text', name='name')
-                    p
-                    label Middle
-                    input(type='text', name='middle')
-                    p
-                    label Last
-                    input(type='text', name='last')
-                    p
-                    label Username
-                    input(type='text', name='username')
-                    p
-                    label Email
-                    input(type='text', name='email')
-                    p
-                    label Password
-                    input(type='password', name='password')
-                    p
-                    input(type='submit', value='Signup')    
+          .hero-unit.span4 
+              form(id='signup-form', action='/signup', method='post')
+                        p
+                        label Name
+                        input(type='text', name='name')
+                        p
+                        label Middle
+                        input(type='text', name='middle')
+                        p
+                        label Last
+                        input(type='text', name='last')
+                        p
+                        label Username
+                        input(type='text', name='username')
+                        p
+                        label Email
+                        input(type='text', name='email')
+                        p
+                        label Password
+                        input(type='password', name='password')
+                        p
+                        input.btn-primary(type='submit', value='Signup')    
         hr
         footer
           p © CataCS 2013

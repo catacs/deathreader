@@ -34,30 +34,22 @@ html.no-js
           a.brand(href='#') #{title}
           - if (user && user.isLoggedIn)
                ul.nav.pull-right
-                    li.dropdown
-                        a.dropdown-toggle(href='#', data-toggle='dropdown')
-                            | #{user.nickname}
-                            b.caret
+                    li.btn-group
+                        button.btn.btn-primary #{user.completename}
+                        button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown")
+                            span.icon-cog
                           ul.dropdown-menu
                             li
                               a(href='/settings') Settings
                             li
                               a(href='/preferences') Preferences
                             li
+                              a(href='/account') Account
+                            li
                               a(href='/logout') Logout
           - else
                 .nav-collapse.collapse
-                        ul.nav
-                          li.active
-                            a(href='#') Home
-                          li
-                            a(href='#about') About
-                          li
-                            a(href='#contact') Contact
-                form(class='navbar-form pull-right', action='/login', method='post')
-                  input.span2(type='text', placeholder='Username', name='username')
-                  input.span2(type='password', placeholder='Password', name='password')
-                  button.btn(type='submit') Sign in
+                    button.btn.btn-primary.pull-right(onclick="location.href='/signup'") Create an Account
           //
             /.nav-collapse
     .container 

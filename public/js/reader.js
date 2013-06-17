@@ -1,4 +1,4 @@
-Var conn
+var conn
 $(function() {
     conn = new Connection();
 })
